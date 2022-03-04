@@ -11,6 +11,7 @@
 
         <module>account-service</module>
         <module>role-service</module>
+        <module>Common</module>
     </modules>
     <name>springcloudGame</name>
     <description>springcloudGame</description>

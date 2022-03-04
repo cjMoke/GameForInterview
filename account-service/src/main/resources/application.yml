@@ -1,12 +1,20 @@
 server:
-  port: 8082
+  port: 8084
 spring:
   datasource:
     druid:
       url: jdbc:mysql://101.42.237.24:3306/cjmokegame1?serverTimezone=UTC
       username: root
       password: 980817
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 101.42.237.24:8848
+  application:
+    name: ACCOUNT-SERVICE
 mybatis-plus:
   global-config:
     db-config:
       table-prefix: t_
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
