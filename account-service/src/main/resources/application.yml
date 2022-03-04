@@ -1,0 +1,12 @@
+server:
+  port: 8082
+spring:
+  datasource:
+    druid:
+      url: jdbc:mysql://101.42.237.24:3306/cjmokegame1?serverTimezone=UTC
+      username: root
+      password: 980817
+mybatis-plus:
+  global-config:
+    db-config:
+      table-prefix: t_

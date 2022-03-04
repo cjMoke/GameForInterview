@@ -1,0 +1,16 @@
+server:
+  port: 8083
+
+spring:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://101.42.237.24:3306/cjmokegame1?serverTimezone=UTC
+    username: root
+    password: 980817
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 101.42.237.24:8848
+  application:
+    name: ROLE-SERVICE
